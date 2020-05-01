@@ -9,8 +9,13 @@ const TextHelpers = {
       unit: 'R$ ',
       suffixUnit: '',
     }),
+  unmaskMoney: (text = '') =>
+    (text !== '' && Number(text.replace(/[^0-9,]+/g, '').replace(',', '.'))) ||
+    0,
 };
 
 export const maskMoney = TextHelpers.maskMoney;
+
+export const unmaskMoney = TextHelpers.unmaskMoney;
 
 export default TextHelpers;

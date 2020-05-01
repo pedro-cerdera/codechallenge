@@ -12,7 +12,12 @@ export const Types = {
   TRANSCATION_RESET: '@transaction/RESET',
 };
 
-export const Actions = {};
+export const Actions = {
+  newTransaction: (value, description) => ({
+    type: Types.TRANSCATION_ADD,
+    payload: {value, description},
+  }),
+};
 
 export const TransactionReducer = (state = initialState, action) => {
   switch (action.type) {
