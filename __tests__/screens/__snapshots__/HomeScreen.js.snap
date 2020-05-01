@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing HomeScreen renders correctly 1`] = `
+<RCTSafeAreaView
+  emulateUnlessSupported={true}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#1C2124",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+      },
+    ]
+  }
+  testID="home-container"
+>
+  <View
+    style={
+      Array [
+        Object {
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "marginBottom": 20,
+          "marginLeft": 20,
+          "marginRight": 20,
+          "marginTop": 20,
+        },
+        Object {
+          "alignItems": "center",
+          "justifyContent": "space-between",
+        },
+      ]
+    }
+  >
+    <Image
+      source={
+        Object {
+          "uri": "logo.png",
+        }
+      }
+    />
+    <Account
+      ammount={0}
+      onBottomPress={[Function]}
+      testID="account"
+    />
+    <OperationsList
+      operations={
+        Array [
+          Object {
+            "icon": "fa-plus-circle",
+            "id": "1",
+            "onPress": [Function],
+            "title": "Nova Transação",
+          },
+          Object {
+            "icon": "fa-list",
+            "id": "2",
+            "onPress": [Function],
+            "title": "Listar Transações",
+          },
+        ]
+      }
+    />
+  </View>
+</RCTSafeAreaView>
+`;
