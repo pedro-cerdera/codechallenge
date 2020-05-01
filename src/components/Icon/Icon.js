@@ -2,6 +2,7 @@ import React from 'react';
 import {View, TouchableOpacity} from 'react-native';
 
 import StyleGuide from '../../styleguide';
+import styles from './styles';
 
 const base = 'react-native-vector-icons';
 
@@ -75,17 +76,16 @@ const Icon = ({
     Container = TouchableOpacity;
   }
 
+  const paddings = {
+    paddingRight: rightSpacing || horizontalSpacing ? 10 : 0,
+    paddingLeft: leftSpacing || horizontalSpacing ? 10 : 0,
+  };
+
   return (
     <React.Suspense fallback={<View />}>
       <Container
         hitSlop={hitSlop}
-        style={{
-          alignItems: 'center',
-          justifyContent: 'center',
-          paddingRight: rightSpacing || horizontalSpacing ? 10 : 0,
-          paddingLeft: leftSpacing || horizontalSpacing ? 10 : 0,
-          ...containerStyle,
-        }}
+        style={[paddings, containerStyle, styles.container]}
         onPress={onPress ? onPress : () => {}}>
         <IconFamily {...rest} name={processedName} />
       </Container>

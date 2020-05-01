@@ -1,3 +1,3 @@
-import Redux from "./Redux";
+import Redux from './Redux';
 
-export { Redux };
+export {Redux};

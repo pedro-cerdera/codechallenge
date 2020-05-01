@@ -1,3 +1,3 @@
-import TransactionsScreen from "./TransactionsScreen";
+import TransactionsScreen from './TransactionsScreen';
 
-export default { TransactionsScreen };
+export default {TransactionsScreen};

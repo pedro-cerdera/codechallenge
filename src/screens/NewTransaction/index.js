@@ -1,4 +1,3 @@
-import NewTransactionScreen from "./NewTransactionScreen";
+import NewTransactionScreen from './NewTransactionScreen';
 
-
-export default { NewTransactionScreen };
+export default {NewTransactionScreen};

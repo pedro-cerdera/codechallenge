@@ -1,12 +1,10 @@
-
 import React from 'react';
-import { Text, View } from 'react-native';
+import {Text, View} from 'react-native';
 
 const NewTransactionScreen = () => (
-  <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+  <View>
     <Text>New Transaction Screen</Text>
   </View>
 );
-
 
 export default NewTransactionScreen;
