@@ -8,6 +8,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
+import PropTypes from 'prop-types';
 
 import {unmaskMoney} from '../../../helpers';
 import {useForm} from '../../../hooks';
@@ -103,6 +104,10 @@ const TransactionForm = ({onSubmit}) => {
       </CardContainer>
     </KeyboardAvoidingView>
   );
+};
+
+TransactionForm.prototype = {
+  onSubmit: PropTypes.func.isRequired,
 };
 
 export default TransactionForm;
