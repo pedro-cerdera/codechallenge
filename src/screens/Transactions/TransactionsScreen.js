@@ -1,9 +1,8 @@
 import React from 'react';
-import {Text, View, StyleSheet, FlatList} from 'react-native';
-import {Icon, TransactionList} from '../../components';
-import styleguide from '../../styleguide';
+import {View} from 'react-native';
 import {useSelector} from 'react-redux';
-import {maskMoney} from '../../helpers';
+import {TransactionList} from '../../components';
+import styles from './styles';
 
 const TransactionsScreen = () => {
   const {transactions} = useSelector((store) => ({
@@ -11,10 +10,11 @@ const TransactionsScreen = () => {
   }));
 
   return (
-    <View
-      testID={'transactions-screen'}
-      style={{flex: 1, backgroundColor: 'white'}}>
-      <TransactionList transactions={transactions} />
+    <View testID={'transactions-screen'} style={styles.container}>
+      <TransactionList
+        testID={'transaction-list'}
+        transactions={transactions}
+      />
     </View>
   );
 };

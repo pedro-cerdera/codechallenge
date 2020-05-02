@@ -1,0 +1,237 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Transactions renders correctly 1`] = `
+<RCTScrollView
+  ItemSeparatorComponent={[Function]}
+  data={
+    Array [
+      Object {
+        "description": "Transação 1",
+        "value": -100,
+      },
+      Object {
+        "description": "Transação 2",
+        "value": 2100,
+      },
+    ]
+  }
+  disableVirtualization={false}
+  getItem={[Function]}
+  getItemCount={[Function]}
+  horizontal={false}
+  initialNumToRender={10}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={10}
+  onContentSizeChange={[Function]}
+  onEndReachedThreshold={2}
+  onLayout={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={Array []}
+  style={
+    Object {
+      "marginTop": 10,
+    }
+  }
+  updateCellsBatchingPeriod={50}
+  viewabilityConfigCallbackPairs={Array []}
+  windowSize={21}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "marginHorizontal": 20,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "marginRight": 20,
+            }
+          }
+        >
+          <Icon
+            color="#8296a4"
+            name="md-money-off"
+            size={24}
+          />
+          <View
+            style={
+              Object {
+                "backgroundColor": "#8296a4",
+                "flex": 1,
+                "marginTop": 3,
+                "width": 0.5,
+              }
+            }
+          />
+        </View>
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#495c69",
+                  "fontFamily": "Poppins-Bold",
+                  "fontSize": 18,
+                },
+                undefined,
+              ]
+            }
+            testID="operation"
+          >
+            Saque
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#597183",
+                  "fontFamily": "Poppins-Regular",
+                  "fontSize": 18,
+                },
+                undefined,
+              ]
+            }
+            testID="description"
+          >
+            Transação 1
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#597183",
+                  "fontFamily": "Poppins-Regular",
+                  "fontSize": 18,
+                },
+                undefined,
+              ]
+            }
+            testID="value"
+          >
+            R$ 100,00
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "height": 5,
+          }
+        }
+      />
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "marginHorizontal": 20,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "marginRight": 20,
+            }
+          }
+        >
+          <Icon
+            color="#8296a4"
+            name="md-attach-money"
+            size={24}
+          />
+          <View
+            style={
+              Object {
+                "backgroundColor": "#8296a4",
+                "flex": 1,
+                "marginTop": 3,
+                "width": 0.5,
+              }
+            }
+          />
+        </View>
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#495c69",
+                  "fontFamily": "Poppins-Bold",
+                  "fontSize": 18,
+                },
+                undefined,
+              ]
+            }
+            testID="operation"
+          >
+            Depósito
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#597183",
+                  "fontFamily": "Poppins-Regular",
+                  "fontSize": 18,
+                },
+                undefined,
+              ]
+            }
+            testID="description"
+          >
+            Transação 2
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#597183",
+                  "fontFamily": "Poppins-Regular",
+                  "fontSize": 18,
+                },
+                undefined,
+              ]
+            }
+            testID="value"
+          >
+            R$ 2.100,00
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;

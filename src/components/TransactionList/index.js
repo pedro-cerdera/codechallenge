@@ -1,3 +1,3 @@
-import TransactionList from './TransacitonList';
+import TransactionList from './TransactionList';
 
 export {TransactionList};

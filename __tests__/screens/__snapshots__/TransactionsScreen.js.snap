@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing TransactionsScreen renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "white",
+      "flex": 1,
+    }
+  }
+  testID="transactions-screen"
+>
+  <TransactionList
+    testID="transaction-list"
+    transactions={
+      Array [
+        Object {
+          "description": "Transação 1",
+          "value": -100,
+        },
+        Object {
+          "description": "Transação 2",
+          "value": 2100,
+        },
+      ]
+    }
+  />
+</View>
+`;

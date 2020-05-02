@@ -1,12 +1,13 @@
 import React from 'react';
 import {FlatList, View} from 'react-native';
+import PropTypes from 'prop-types';
 import {maskMoney} from '../../helpers';
 import styleguide from '../../styleguide';
 import {CustomText} from '../CustomText';
 import {Icon} from '../Icon';
 import styles from './styles';
 
-const TransactionItem = ({value, description}) => (
+export const TransactionItem = ({value, description}) => (
   <View style={styles.itemContainer}>
     <View style={styles.statusContainer}>
       <Icon
@@ -17,11 +18,13 @@ const TransactionItem = ({value, description}) => (
       <View style={styles.line} />
     </View>
     <View style={styles.detailContainer}>
-      <CustomText type={'subtitle'}>
+      <CustomText type={'subtitle'} testID={'operation'}>
         {value < 0 ? 'Saque' : 'Depósito'}
       </CustomText>
-      <CustomText>{description || 'Sem descrição'}</CustomText>
-      <CustomText>{maskMoney(Math.abs(value))}</CustomText>
+      <CustomText testID={'description'}>
+        {description || 'Sem descrição'}
+      </CustomText>
+      <CustomText testID={'value'}>{maskMoney(Math.abs(value))}</CustomText>
     </View>
   </View>
 );
@@ -35,5 +38,14 @@ const TransactionList = ({transactions}) => (
     style={styles.container}
   />
 );
+
+TransactionList.propTypes = {
+  transactions: PropTypes.arrayOf(
+    PropTypes.shape({
+      value: PropTypes.number.isRequired,
+      description: PropTypes.string,
+    }),
+  ).isRequired,
+};
 
 export default TransactionList;

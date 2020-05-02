@@ -57,6 +57,8 @@ const TransactionForm = ({onSubmit}) => {
     },
   });
 
+  console.log(Form.errors);
+
   return (
     <KeyboardAvoidingView
       style={styles.container}
@@ -71,7 +73,6 @@ const TransactionForm = ({onSubmit}) => {
             onChangeText={(text) =>
               Form.handleChange(unmaskMoney(text), 'value')
             }
-            onBlur={() => Form.handleBlur('value')}
             value={Form.values.value}
             error={Form.errors.value}
             keyboardType={'numeric'}
@@ -84,7 +85,6 @@ const TransactionForm = ({onSubmit}) => {
             topSpacing
             numberOfLines={2}
             onChangeText={(text) => Form.handleChange(text, 'description')}
-            onBlur={() => Form.handleBlur('description')}
             value={Form.values.description}
             error={Form.errors.description}
             keyboardType={'default'}
