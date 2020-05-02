@@ -1,7 +1,8 @@
-import React from 'react';
-import {Animated, Text, ViewPropTypes} from 'react-native';
-import {MaskedTextInput, TextInput} from './styles';
 import PropTypes from 'prop-types';
+import React from 'react';
+import {Animated, ViewPropTypes} from 'react-native';
+import {CustomText} from '../CustomText';
+import {MaskedTextInput, TextInput} from './styles';
 
 const Input = (props) => {
   const display = {display: props.visible ? 'flex' : 'none'};
@@ -12,9 +13,9 @@ const Input = (props) => {
 
   return (
     <Animated.View style={[marginTop, props.containerStyle, display]}>
-      <Text>{props.title}</Text>
+      <CustomText>{props.title}</CustomText>
       <TextInputDef {...props} ref={props.refProp} />
-      {props.error && <Text>{props.error}</Text>}
+      {props.error && <CustomText>{props.error}</CustomText>}
     </Animated.View>
   );
 };
@@ -23,7 +24,7 @@ Input.propTypes = {
   visible: PropTypes.bool,
   topSpacing: PropTypes.bool,
   masked: PropTypes.bool,
-  type: PropTypes.oneOf(
+  type: PropTypes.oneOf([
     'credit-card',
     'cpf',
     'cnpj',
@@ -33,7 +34,7 @@ Input.propTypes = {
     'cel-phone',
     'datetime',
     'custom',
-  ),
+  ]),
   containerStyle: ViewPropTypes.style,
   title: PropTypes.string.isRequired,
   refProp: PropTypes.func,

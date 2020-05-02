@@ -11,6 +11,7 @@ export const TextInput = styled.TextInput.attrs(() => ({
   background-color: white;
   border: 1px solid black;
   border-radius: 25px;
+  font-family: Poppins-Regular;
   padding: 15px 19px;
   justify-content: center;
   margin: 0;
@@ -22,8 +23,8 @@ export const MaskedTextInput = styled(TextInputMask).attrs(() => ({
   placeholderTextColor: StyleGuide.colors.text,
 }))`
   background-color: white;
-  /* line-height: 24px; */
   border: 1px solid black;
+  font-family: Poppins-Regular;
   border-radius: 25px;
   padding: 15px 19px;
   justify-content: center;

@@ -90,9 +90,16 @@ exports[`Testing Operations renders correctly 1`] = `
         />
         <Text
           style={
-            Object {
-              "color": "white",
-            }
+            Array [
+              Object {
+                "color": "#597183",
+                "fontFamily": "Poppins-Regular",
+                "fontSize": 12,
+              },
+              Object {
+                "color": "white",
+              },
+            ]
           }
         >
           Operation-1
@@ -148,9 +155,16 @@ exports[`Testing Operations renders correctly 1`] = `
         />
         <Text
           style={
-            Object {
-              "color": "white",
-            }
+            Array [
+              Object {
+                "color": "#597183",
+                "fontFamily": "Poppins-Regular",
+                "fontSize": 12,
+              },
+              Object {
+                "color": "white",
+              },
+            ]
           }
         >
           Operation-2

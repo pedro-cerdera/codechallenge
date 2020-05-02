@@ -42,7 +42,18 @@ exports[`Testing Account renders correctly 1`] = `
       rightSpacing={true}
       size={24}
     />
-    <Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#597183",
+            "fontFamily": "Poppins-Regular",
+            "fontSize": 18,
+          },
+          undefined,
+        ]
+      }
+    >
       Conta
     </Text>
   </View>
@@ -53,10 +64,31 @@ exports[`Testing Account renders correctly 1`] = `
       }
     }
   >
-    <Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#597183",
+            "fontFamily": "Poppins-Regular",
+            "fontSize": 18,
+          },
+          undefined,
+        ]
+      }
+    >
       Saldo disponível
     </Text>
     <Text
+      style={
+        Array [
+          Object {
+            "color": "#597183",
+            "fontFamily": "Poppins-Regular",
+            "fontSize": 20,
+          },
+          undefined,
+        ]
+      }
       testID="ammount-value"
     />
   </View>
@@ -89,9 +121,16 @@ exports[`Testing Account renders correctly 1`] = `
     />
     <Text
       style={
-        Object {
-          "flex": 1,
-        }
+        Array [
+          Object {
+            "color": "#597183",
+            "fontFamily": "Poppins-Regular",
+            "fontSize": 14,
+          },
+          Object {
+            "flex": 1,
+          },
+        ]
       }
     >
       Veja suas transações

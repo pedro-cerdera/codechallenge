@@ -1,26 +1,25 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import {
   KeyboardAvoidingView,
   Platform,
   ScrollView,
   Switch,
-  Text,
   TouchableOpacity,
   View,
 } from 'react-native';
-import PropTypes from 'prop-types';
-
 import {unmaskMoney} from '../../../helpers';
 import {useForm} from '../../../hooks';
 import {CardContainer} from '../../containers';
+import {CustomText} from '../../CustomText';
 import {Input} from '../../Input';
 import styles from './styles';
 
 const SwitchInput = ({onValueChange, value, values = []}) => (
   <View style={styles.switchContainer}>
-    <Text>{values[0]}</Text>
+    <CustomText>{values[0]}</CustomText>
     <Switch onValueChange={onValueChange} value={value} testID={'switch'} />
-    <Text>{values[1]}</Text>
+    <CustomText>{values[1]}</CustomText>
   </View>
 );
 
@@ -29,7 +28,7 @@ const Button = ({onPress, children}) => (
     style={styles.buttonContainer}
     onPress={onPress}
     testID={'button'}>
-    <Text style={styles.buttonText}>{children}</Text>
+    <CustomText style={styles.buttonText}>{children}</CustomText>
   </TouchableOpacity>
 );
 

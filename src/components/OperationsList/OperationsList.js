@@ -1,9 +1,8 @@
-import React from 'react';
-import {FlatList, Text, TouchableOpacity, View} from 'react-native';
 import PropTypes from 'prop-types';
-
+import React from 'react';
+import {FlatList, TouchableOpacity, View} from 'react-native';
+import {CustomText} from '../CustomText';
 import {Icon} from '../Icon';
-
 import styles from './styles';
 
 export const OperationItem = ({icon, title, onPress}) => (
@@ -12,7 +11,9 @@ export const OperationItem = ({icon, title, onPress}) => (
     onPress={onPress}
     testID={title}>
     <Icon name={icon} size={24} color={'white'} />
-    <Text style={styles.itemTitle}>{title}</Text>
+    <CustomText style={styles.itemTitle} type={'tiny'}>
+      {title}
+    </CustomText>
   </TouchableOpacity>
 );
 

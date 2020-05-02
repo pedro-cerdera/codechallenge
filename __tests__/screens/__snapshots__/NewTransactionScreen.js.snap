@@ -97,7 +97,18 @@ exports[`Testing HomeScreen renders correctly 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#597183",
+                      "fontFamily": "Poppins-Regular",
+                      "fontSize": 18,
+                    },
+                    undefined,
+                  ]
+                }
+              >
                 Valor
               </Text>
               <TextInput
@@ -107,7 +118,6 @@ exports[`Testing HomeScreen renders correctly 1`] = `
                 onBlur={[Function]}
                 onChangeText={[Function]}
                 placeholder="R$ 100,00"
-                placeholderTextColor="#999999"
                 rejectResponderTermination={true}
                 style={
                   Array [
@@ -117,6 +127,7 @@ exports[`Testing HomeScreen renders correctly 1`] = `
                       "borderRadius": 25,
                       "borderStyle": "solid",
                       "borderWidth": 1,
+                      "fontFamily": "Poppins-Regular",
                       "height": 50,
                       "justifyContent": "center",
                       "marginBottom": 0,
@@ -148,7 +159,18 @@ exports[`Testing HomeScreen renders correctly 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#597183",
+                      "fontFamily": "Poppins-Regular",
+                      "fontSize": 18,
+                    },
+                    undefined,
+                  ]
+                }
+              >
                 Descrição
               </Text>
               <TextInput
@@ -160,7 +182,6 @@ exports[`Testing HomeScreen renders correctly 1`] = `
                 onBlur={[Function]}
                 onChangeText={[Function]}
                 placeholder="Ex.: Transferência bancária"
-                placeholderTextColor="#999999"
                 rejectResponderTermination={true}
                 style={
                   Array [
@@ -170,6 +191,7 @@ exports[`Testing HomeScreen renders correctly 1`] = `
                       "borderRadius": 25,
                       "borderStyle": "solid",
                       "borderWidth": 1,
+                      "fontFamily": "Poppins-Regular",
                       "justifyContent": "center",
                       "marginBottom": 0,
                       "marginLeft": 0,
@@ -202,7 +224,18 @@ exports[`Testing HomeScreen renders correctly 1`] = `
                 }
               }
             >
-              <Text>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#597183",
+                      "fontFamily": "Poppins-Regular",
+                      "fontSize": 18,
+                    },
+                    undefined,
+                  ]
+                }
+              >
                 Saque
               </Text>
               <RCTSwitch
@@ -219,7 +252,18 @@ exports[`Testing HomeScreen renders correctly 1`] = `
                 testID="switch"
                 value={false}
               />
-              <Text>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#597183",
+                      "fontFamily": "Poppins-Regular",
+                      "fontSize": 18,
+                    },
+                    undefined,
+                  ]
+                }
+              >
                 Depósito
               </Text>
             </View>
@@ -249,9 +293,16 @@ exports[`Testing HomeScreen renders correctly 1`] = `
         >
           <Text
             style={
-              Object {
-                "color": "white",
-              }
+              Array [
+                Object {
+                  "color": "#597183",
+                  "fontFamily": "Poppins-Regular",
+                  "fontSize": 18,
+                },
+                Object {
+                  "color": "white",
+                },
+              ]
             }
           >
             Fazer Transação
