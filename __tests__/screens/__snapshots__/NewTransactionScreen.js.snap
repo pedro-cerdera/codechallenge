@@ -87,6 +87,7 @@ exports[`Testing HomeScreen renders correctly 1`] = `
               "flex": 1,
             }
           }
+          testID="scroll-transaction"
         >
           <View>
             <View
