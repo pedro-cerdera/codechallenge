@@ -4,6 +4,9 @@ import HomeScreen from '../screens/Home/HomeScreen';
 import NewTransactionScreen from '../screens/NewTransaction/NewTransactionScreen';
 import TransactionsScreen from '../screens/Transactions/TransactionsScreen';
 import {Icon} from '../components';
+import {Image} from 'react-native';
+import Logo from '../assets/images/logo.png';
+import styleguide from '../styleguide';
 
 const Stack = createStackNavigator();
 
@@ -43,7 +46,43 @@ const AppNavigator = () => (
     <Stack.Screen
       name="Transactions"
       component={TransactionsScreen}
-      options={{header: () => null}}
+      options={({navigation}) => ({
+        headerTitle: (
+          <Image
+            source={Logo}
+            style={{
+              height: 22,
+              width: 93,
+              resizeMode: 'contain',
+            }}
+          />
+        ),
+        headerStyle: {
+          elevation: 0,
+          shadowColor: 'transparent',
+          borderBottomColor: 'transparent',
+          borderBottomWidth: 0,
+          backgroundColor: styleguide.colors.moon1000,
+        },
+        headerLeft: () => (
+          <Icon
+            onPress={() => navigation.goBack(null)}
+            name={'fa-angle-left'}
+            hitSlop={{
+              top: 10,
+              left: 10,
+              right: 10,
+              bottom: 10,
+            }}
+            solid
+            color="white"
+            size={30}
+          />
+        ),
+        headerLeftContainerStyle: {
+          marginLeft: 20,
+        },
+      })}
     />
   </Stack.Navigator>
 );

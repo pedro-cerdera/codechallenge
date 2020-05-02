@@ -29,7 +29,7 @@ const Account = ({ammount, onBottomPress}) => (
   </CardContainer>
 );
 
-Account.prototype = {
+Account.propTypes = {
   ammount: PropTypes.number.isRequired,
   onBottomPress: PropTypes.func.isRequired,
 };

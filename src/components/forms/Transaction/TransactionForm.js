@@ -106,7 +106,7 @@ const TransactionForm = ({onSubmit}) => {
   );
 };
 
-TransactionForm.prototype = {
+TransactionForm.propTypes = {
   onSubmit: PropTypes.func.isRequired,
 };
 

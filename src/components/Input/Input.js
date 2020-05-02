@@ -19,7 +19,7 @@ const Input = (props) => {
   );
 };
 
-Input.prototype = {
+Input.propTypes = {
   visible: PropTypes.bool,
   topSpacing: PropTypes.bool,
   masked: PropTypes.bool,

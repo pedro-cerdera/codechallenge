@@ -27,7 +27,7 @@ const OperationsList = ({operations}) => (
   />
 );
 
-OperationsList.prototype = {
+OperationsList.propTypes = {
   operations: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
