@@ -1,7 +1,6 @@
 import React from 'react';
 import {Animated, Text} from 'react-native';
-import StyleGuide, {CustomText} from '../../styleguide';
-import styles, {MaskedTextInput, TextInput} from './styles';
+import {MaskedTextInput, TextInput} from './styles';
 
 const Input = (props) => {
   const display = {display: props.visible ? 'flex' : 'none'};

@@ -13,6 +13,7 @@ import styles from './styles';
 
 const NewTransactionScreen = () => {
   const dispatch = useDispatch();
+
   const navigation = useNavigation();
   const submitTransaction = useCallback(
     (value, description) => {
@@ -23,11 +24,11 @@ const NewTransactionScreen = () => {
   );
 
   return (
-    <SafeAreaContainer>
+    <SafeAreaContainer testID={'new-request-screen'}>
       <DefaultSpacingContainer style={styles.container}>
         <Image source={Logo} />
         <TransactionForm onSubmit={submitTransaction} />
-        <View style={{height: 30}} />
+        <View style={styles.footer} />
       </DefaultSpacingContainer>
     </SafeAreaContainer>
   );

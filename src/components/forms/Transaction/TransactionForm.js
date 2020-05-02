@@ -18,13 +18,16 @@ import styles from './styles';
 const SwitchInput = ({onValueChange, value, values = []}) => (
   <View style={styles.switchContainer}>
     <Text>{values[0]}</Text>
-    <Switch onValueChange={onValueChange} value={value} />
+    <Switch onValueChange={onValueChange} value={value} testID={'switch'} />
     <Text>{values[1]}</Text>
   </View>
 );
 
 const Button = ({onPress, children}) => (
-  <TouchableOpacity style={styles.buttonContainer} onPress={onPress}>
+  <TouchableOpacity
+    style={styles.buttonContainer}
+    onPress={onPress}
+    testID={'button'}>
     <Text style={styles.buttonText}>{children}</Text>
   </TouchableOpacity>
 );
@@ -62,6 +65,7 @@ const TransactionForm = ({onSubmit}) => {
       <CardContainer style={styles.cardContainer}>
         <ScrollView style={styles.scrollContainer}>
           <Input
+            testID={'value'}
             masked
             type={'money'}
             onChangeText={(text) =>
@@ -75,6 +79,7 @@ const TransactionForm = ({onSubmit}) => {
             placeholder={'R$ 100,00'}
           />
           <Input
+            testID={'description'}
             multiline
             topSpacing
             numberOfLines={2}
@@ -91,7 +96,7 @@ const TransactionForm = ({onSubmit}) => {
               Form.handleChange(!Form.values.isDeposit, 'isDeposit')
             }
             value={Form.values.isDeposit}
-            values={['Depósito', 'Saque']}
+            values={['Saque', 'Depósito']}
           />
         </ScrollView>
         <Button onPress={Form.handleSubmit}>{'Fazer Transação'}</Button>

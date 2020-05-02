@@ -1,4 +1,8 @@
-import {TransactionReducer, Types} from '../../src/reducers/transaction';
+import {
+  TransactionReducer,
+  Types,
+  Actions,
+} from '../../src/reducers/transaction';
 
 describe('transaction reducer', () => {
   it('should return the initial state', () => {
@@ -145,5 +149,18 @@ describe('transaction reducer', () => {
       isLoading: false,
       error: null,
     });
+  });
+
+  it('should call newTransaction', () => {
+    const description = 'Teste';
+    const value = 100;
+    const expectedAction = {
+      type: Types.TRANSCATION_ADD,
+      payload: {
+        value,
+        description,
+      },
+    };
+    expect(Actions.newTransaction(value, description)).toEqual(expectedAction);
   });
 });
