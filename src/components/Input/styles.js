@@ -1,0 +1,58 @@
+import {StyleSheet} from 'react-native';
+import {TextInputMask} from 'react-native-masked-text';
+
+import styled from 'styled-components/native';
+
+import StyleGuide from '../../styleguide';
+
+export const TextInput = styled.TextInput.attrs(() => ({
+  placeholderTextColor: StyleGuide.colors.text,
+}))`
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 25px;
+  padding: 15px 19px;
+  /* padding-left: ${(props) => (props.icon ? 40 : 20)}px; */
+  justify-content: center;
+  margin: 0;
+  ${(props) => (props.multiline ? 'min-height: 50px;' : 'height: 50px;')}
+  max-height: 200px;
+`;
+
+export const MaskedTextInput = styled(TextInputMask).attrs(() => ({
+  placeholderTextColor: StyleGuide.colors.text,
+}))`
+  background-color: white;
+  /* line-height: 24px; */
+  border: 1px solid black;
+  border-radius: 25px;
+  padding: 15px 19px; /* THIS CODE FIX LINE-HEIGTH CENTER PROBLEM PUTTING 4PX VERTICALLY*/
+  /* padding-left: ${(props) => (props.icon ? 40 : 20)}px; */
+  justify-content: center;
+  margin: 0;
+  ${(props) => (props.multiline ? 'min-height: 50px;' : 'height: 50px;')}
+  max-height: 200px;
+`;
+
+export const DefaultInput = styled.TextInput.attrs(() => ({
+  placeholderTextColor: StyleGuide.colors.text,
+}))`
+  flex-grow: 1;
+  /* text-align-vertical: center; */
+  padding-top: 0;
+  padding-bottom:0;
+
+  /* border-radius: 5px; */
+  /* padding-left: ${(props) => (props.icon ? 40 : 20)}px; */
+  /* align-items: center; */
+  margin: 0;
+  ${(props) =>
+    props.multiline
+      ? `min-height: ${props.noMinHeight ? 19 : 37}px;
+      max-height: ${props.noMinHeight ? 100 : 200}px;`
+      : `height: ${props.noMinHeight ? 19 : 37}px;`}
+`;
+
+export default StyleSheet.create({
+  title: {marginBottom: 5},
+});

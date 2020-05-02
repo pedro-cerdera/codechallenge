@@ -4,7 +4,7 @@ const whiteColor = 'white';
 
 const backgroundColor = '#00000009';
 
-const textColor = 'dark-gray';
+const textColor = '#999999';
 
 const Colors = {
   primary: primaryColor,
