@@ -63,7 +63,7 @@ const TransactionForm = ({onSubmit}) => {
       behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
       keyboardVerticalOffset={Platform.OS === 'ios' ? 70 : 0}>
       <CardContainer style={styles.cardContainer}>
-        <ScrollView style={styles.scrollContainer}>
+        <ScrollView style={styles.scrollContainer} testID={"scroll-transaction"}>
           <Input
             testID={'value'}
             masked

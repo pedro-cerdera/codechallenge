@@ -38,6 +38,8 @@ describe('Transaction', () => {
     await element(by.id('description')).typeText('Transaction 2');
     await expect(element(by.id('description'))).toHaveText('Transaction 2');
 
+    await element(by.id('scroll-transaction')).scrollTo('bottom');
+
     await element(by.id('switch')).tap();
 
     await element(by.id('button')).tap();
@@ -76,6 +78,8 @@ describe('Transaction', () => {
     await element(by.id('description')).tap();
     await element(by.id('description')).typeText('Transaction 3');
     await expect(element(by.id('description'))).toHaveText('Transaction 3');
+
+    await element(by.id('scroll-transaction')).scrollTo('bottom');
 
     await element(by.id('switch')).tap();
 
