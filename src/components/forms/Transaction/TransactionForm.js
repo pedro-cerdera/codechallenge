@@ -57,8 +57,6 @@ const TransactionForm = ({onSubmit}) => {
     },
   });
 
-  console.log(Form.errors);
-
   return (
     <KeyboardAvoidingView
       style={styles.container}
