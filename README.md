@@ -40,7 +40,7 @@ cd ios && pod install && cd ..
 Then run your application:
 
 ```sh
-react-native run-android
+react-native run-ios
 ```
 
 ## Testing
