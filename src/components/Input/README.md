@@ -1,5 +1,5 @@
 # Input
-Show user account resume
+Show a text input
 
 ## Usage
 
