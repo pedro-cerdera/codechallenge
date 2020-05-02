@@ -1,0 +1,176 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Operations renders correctly 1`] = `
+<RCTScrollView
+  ItemSeparatorComponent={[Function]}
+  data={
+    Array [
+      Object {
+        "icon": "operation-1-icon",
+        "id": "1",
+        "onPress": [Function],
+        "title": "Operation-1",
+      },
+      Object {
+        "icon": "operation-2-icon",
+        "id": "2",
+        "onPress": [Function],
+        "title": "Operation-2",
+      },
+    ]
+  }
+  disableVirtualization={false}
+  getItem={[Function]}
+  getItemCount={[Function]}
+  horizontal={true}
+  initialNumToRender={10}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={10}
+  onContentSizeChange={[Function]}
+  onEndReachedThreshold={2}
+  onLayout={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={Array []}
+  style={
+    Object {
+      "flexGrow": 0,
+      "width": "100%",
+    }
+  }
+  updateCellsBatchingPeriod={50}
+  viewabilityConfigCallbackPairs={Array []}
+  windowSize={21}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={
+        Array [
+          Object {
+            "flexDirection": "row",
+          },
+          null,
+        ]
+      }
+    >
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "backgroundColor": "#FFFFFF22",
+            "borderRadius": 5,
+            "height": 110,
+            "justifyContent": "space-between",
+            "opacity": 1,
+            "padding": 10,
+            "width": 100,
+          }
+        }
+        testID="Operation-1"
+      >
+        <Icon
+          color="white"
+          name="operation-1-icon"
+          size={24}
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#597183",
+                "fontFamily": "Poppins-Regular",
+                "fontSize": 12,
+              },
+              Object {
+                "color": "white",
+              },
+            ]
+          }
+        >
+          Operation-1
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "width": 10,
+          }
+        }
+      />
+    </View>
+    <View
+      onLayout={[Function]}
+      style={
+        Array [
+          Object {
+            "flexDirection": "row",
+          },
+          null,
+        ]
+      }
+    >
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "backgroundColor": "#FFFFFF22",
+            "borderRadius": 5,
+            "height": 110,
+            "justifyContent": "space-between",
+            "opacity": 1,
+            "padding": 10,
+            "width": 100,
+          }
+        }
+        testID="Operation-2"
+      >
+        <Icon
+          color="white"
+          name="operation-2-icon"
+          size={24}
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#597183",
+                "fontFamily": "Poppins-Regular",
+                "fontSize": 12,
+              },
+              Object {
+                "color": "white",
+              },
+            ]
+          }
+        >
+          Operation-2
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;

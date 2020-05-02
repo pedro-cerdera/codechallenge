@@ -1,0 +1,145 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Account renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "white",
+        "borderRadius": 5,
+        "elevation": 1,
+        "maxWidth": 500,
+        "shadowColor": "gray",
+        "shadowOffset": Object {
+          "height": 3,
+          "width": 0,
+        },
+        "shadowOpacity": 1,
+        "shadowRadius": 3,
+        "width": "100%",
+      },
+      Object {
+        "flex": 1,
+        "justifyContent": "space-between",
+        "maxHeight": 350,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "paddingHorizontal": 30,
+        "paddingTop": 30,
+      }
+    }
+  >
+    <Icon
+      color="black"
+      name="fa5-wallet"
+      rightSpacing={true}
+      size={24}
+    />
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#597183",
+            "fontFamily": "Poppins-Regular",
+            "fontSize": 18,
+          },
+          undefined,
+        ]
+      }
+    >
+      Conta
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "padding": 30,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#597183",
+            "fontFamily": "Poppins-Regular",
+            "fontSize": 18,
+          },
+          undefined,
+        ]
+      }
+    >
+      Saldo disponível
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#597183",
+            "fontFamily": "Poppins-Regular",
+            "fontSize": 20,
+          },
+          undefined,
+        ]
+      }
+      testID="ammount-value"
+    />
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#00000009",
+        "flexDirection": "row",
+        "opacity": 1,
+        "padding": 30,
+      }
+    }
+    testID="bottom-button"
+  >
+    <Icon
+      color="black"
+      name="fa5-list"
+      rightSpacing={true}
+      size={18}
+    />
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#597183",
+            "fontFamily": "Poppins-Regular",
+            "fontSize": 14,
+          },
+          Object {
+            "flex": 1,
+          },
+        ]
+      }
+    >
+      Veja suas transações
+    </Text>
+    <Icon
+      color="black"
+      name="fa-angle-right"
+      size={24}
+    />
+  </View>
+</View>
+`;

@@ -1,0 +1,271 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Transaction Form renders correctly 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    Array [
+      Object {
+        "flex": 1,
+        "maxHeight": 350,
+        "width": "100%",
+      },
+      Object {
+        "paddingBottom": 0,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "white",
+          "borderRadius": 5,
+          "elevation": 1,
+          "maxWidth": 500,
+          "shadowColor": "gray",
+          "shadowOffset": Object {
+            "height": 3,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 3,
+          "width": "100%",
+        },
+        Object {
+          "flex": 1,
+          "justifyContent": "space-between",
+          "padding": 20,
+        },
+      ]
+    }
+  >
+    <RCTScrollView
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <View>
+        <View
+          style={
+            Object {
+              "display": "flex",
+              "marginTop": 0,
+            }
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#597183",
+                  "fontFamily": "Poppins-Regular",
+                  "fontSize": 18,
+                },
+                undefined,
+              ]
+            }
+          >
+            Valor
+          </Text>
+          <TextInput
+            allowFontScaling={true}
+            keyboardType="numeric"
+            masked={true}
+            onChangeText={[Function]}
+            placeholder="R$ 100,00"
+            rejectResponderTermination={true}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "white",
+                  "borderColor": "black",
+                  "borderRadius": 25,
+                  "borderStyle": "solid",
+                  "borderWidth": 1,
+                  "fontFamily": "Poppins-Regular",
+                  "height": 50,
+                  "justifyContent": "center",
+                  "marginBottom": 0,
+                  "marginLeft": 0,
+                  "marginRight": 0,
+                  "marginTop": 0,
+                  "maxHeight": 200,
+                  "paddingBottom": 15,
+                  "paddingLeft": 19,
+                  "paddingRight": 19,
+                  "paddingTop": 15,
+                },
+              ]
+            }
+            testID="value"
+            title="Valor"
+            topSpacing={false}
+            type="money"
+            underlineColorAndroid="transparent"
+            value="R$0,00"
+            visible={true}
+          />
+        </View>
+        <View
+          style={
+            Object {
+              "display": "flex",
+              "marginTop": 15,
+            }
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#597183",
+                  "fontFamily": "Poppins-Regular",
+                  "fontSize": 18,
+                },
+                undefined,
+              ]
+            }
+          >
+            Descrição
+          </Text>
+          <TextInput
+            allowFontScaling={true}
+            keyboardType="default"
+            masked={false}
+            multiline={true}
+            numberOfLines={2}
+            onChangeText={[Function]}
+            placeholder="Ex.: Transferência bancária"
+            rejectResponderTermination={true}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "white",
+                  "borderColor": "black",
+                  "borderRadius": 25,
+                  "borderStyle": "solid",
+                  "borderWidth": 1,
+                  "fontFamily": "Poppins-Regular",
+                  "justifyContent": "center",
+                  "marginBottom": 0,
+                  "marginLeft": 0,
+                  "marginRight": 0,
+                  "marginTop": 0,
+                  "maxHeight": 200,
+                  "minHeight": 50,
+                  "paddingBottom": 15,
+                  "paddingLeft": 19,
+                  "paddingRight": 19,
+                  "paddingTop": 15,
+                },
+              ]
+            }
+            testID="description"
+            title="Descrição"
+            topSpacing={true}
+            underlineColorAndroid="transparent"
+            value=""
+            visible={true}
+          />
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "marginTop": 15,
+            }
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#597183",
+                  "fontFamily": "Poppins-Regular",
+                  "fontSize": 18,
+                },
+                undefined,
+              ]
+            }
+          >
+            Saque
+          </Text>
+          <RCTSwitch
+            accessibilityRole="switch"
+            onChange={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "height": 31,
+                "width": 51,
+              }
+            }
+            testID="switch"
+            value={false}
+          />
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#597183",
+                  "fontFamily": "Poppins-Regular",
+                  "fontSize": 18,
+                },
+                undefined,
+              ]
+            }
+          >
+            Depósito
+          </Text>
+        </View>
+      </View>
+    </RCTScrollView>
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#1C2124",
+          "borderRadius": 25,
+          "opacity": 1,
+          "padding": 15,
+          "width": "100%",
+        }
+      }
+      testID="button"
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#597183",
+              "fontFamily": "Poppins-Regular",
+              "fontSize": 18,
+            },
+            Object {
+              "color": "white",
+            },
+          ]
+        }
+      >
+        Fazer Transação
+      </Text>
+    </View>
+  </View>
+</View>
+`;
