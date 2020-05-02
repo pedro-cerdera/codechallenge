@@ -11,8 +11,8 @@ export const TextInput = styled.TextInput.attrs(() => ({
   background-color: white;
   border: 1px solid black;
   border-radius: 25px;
+  font-family: Poppins-Regular;
   padding: 15px 19px;
-  /* padding-left: ${(props) => (props.icon ? 40 : 20)}px; */
   justify-content: center;
   margin: 0;
   ${(props) => (props.multiline ? 'min-height: 50px;' : 'height: 50px;')}
@@ -23,11 +23,10 @@ export const MaskedTextInput = styled(TextInputMask).attrs(() => ({
   placeholderTextColor: StyleGuide.colors.text,
 }))`
   background-color: white;
-  /* line-height: 24px; */
   border: 1px solid black;
+  font-family: Poppins-Regular;
   border-radius: 25px;
-  padding: 15px 19px; /* THIS CODE FIX LINE-HEIGTH CENTER PROBLEM PUTTING 4PX VERTICALLY*/
-  /* padding-left: ${(props) => (props.icon ? 40 : 20)}px; */
+  padding: 15px 19px;
   justify-content: center;
   margin: 0;
   ${(props) => (props.multiline ? 'min-height: 50px;' : 'height: 50px;')}
@@ -38,13 +37,8 @@ export const DefaultInput = styled.TextInput.attrs(() => ({
   placeholderTextColor: StyleGuide.colors.text,
 }))`
   flex-grow: 1;
-  /* text-align-vertical: center; */
   padding-top: 0;
-  padding-bottom:0;
-
-  /* border-radius: 5px; */
-  /* padding-left: ${(props) => (props.icon ? 40 : 20)}px; */
-  /* align-items: center; */
+  padding-bottom: 0;
   margin: 0;
   ${(props) =>
     props.multiline

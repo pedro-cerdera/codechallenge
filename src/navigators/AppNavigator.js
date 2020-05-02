@@ -1,9 +1,9 @@
-import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
+import React from 'react';
 import HomeScreen from '../screens/Home/HomeScreen';
 import NewTransactionScreen from '../screens/NewTransaction/NewTransactionScreen';
 import TransactionsScreen from '../screens/Transactions/TransactionsScreen';
-import {Icon} from '../components';
+import {LogoHeader, TransparentHeader} from './Headers';
 
 const Stack = createStackNavigator();
 
@@ -18,32 +18,15 @@ const AppNavigator = () => (
       name="NewTransaction"
       component={NewTransactionScreen}
       options={({navigation}) => ({
-        headerTransparent: () => true,
-        headerLeft: () => (
-          <Icon
-            onPress={() => navigation.goBack(null)}
-            name={'fa-angle-left'}
-            hitSlop={{
-              top: 10,
-              left: 10,
-              right: 10,
-              bottom: 10,
-            }}
-            solid
-            color="white"
-            size={30}
-          />
-        ),
-        headerTitle: '',
-        headerLeftContainerStyle: {
-          marginLeft: 20,
-        },
+        ...TransparentHeader(navigation),
       })}
     />
     <Stack.Screen
       name="Transactions"
       component={TransactionsScreen}
-      options={{header: () => null}}
+      options={({navigation}) => ({
+        ...LogoHeader(navigation),
+      })}
     />
   </Stack.Navigator>
 );

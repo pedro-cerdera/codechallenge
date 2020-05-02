@@ -29,7 +29,7 @@ export const TransactionReducer = (state = initialState, action) => {
     case Types.TRANSCATION_ADD:
       return {
         ...state,
-        transactions: [...state.transactions, action.payload],
+        transactions: [action.payload, ...state.transactions],
         ammount: state.ammount + action.payload?.value,
       };
     case Types.TRANSCATION_SET_ERROR:

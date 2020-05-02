@@ -98,12 +98,12 @@ describe('transaction reducer', () => {
       ammount: 50,
       transactions: [
         {
-          value: 100,
-          notes: 'Test Case TRANSCATION_ADD 1',
-        },
-        {
           value: -50,
           notes: 'Test Case TRANSCATION_ADD 2',
+        },
+        {
+          value: 100,
+          notes: 'Test Case TRANSCATION_ADD 1',
         },
       ],
       isLoading: false,

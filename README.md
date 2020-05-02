@@ -64,4 +64,4 @@ yarn test
 
 ## About
 
-The application open showing the user ammount. This value is stored in a redux.
+The idea was to create an application like a bank account, where the user can register transactions and consult them.
